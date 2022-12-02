@@ -1,6 +1,33 @@
-header h1 {
-    color: blue;
-    background-color: pink;
-    font-size: 4rem;
-    border: 1px solid pink;
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(113, 187, 252);
 }
+
+header h1 {
+    margin-left: 1rem;
+    color: blue;
+    font-size: 4rem;
+}
+
+nav {
+    margin-right: 1rem;
+}
+
+nav button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+nav button:hover {
+    text-decoration: line-through;
+}
+
+.hero-image {
+    background-image: url("/images/windows-xp-bliss-4k-lu-1920x1080.jpeg");
+}
+
