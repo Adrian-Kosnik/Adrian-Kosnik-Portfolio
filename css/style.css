@@ -1,6 +1,99 @@
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(113, 187, 252, 0.7);
+    position: sticky;
+    top: 0;
+}
+
 header h1 {
+    margin-left: 1rem;
     color: blue;
-    background-color: pink;
     font-size: 4rem;
-    border: 1px solid pink;
+}
+
+nav {
+    margin-right: 1rem;
+}
+
+nav button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+nav button:hover {
+    text-decoration: line-through;
+}
+
+.hero-banner div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.hero-banner div h2 {
+    padding: 0 5rem 2.5rem 0;
+    font-size: 4rem;
+}
+
+.hero-image {
+    background-image: url("/images/gradienta-el5ZXkPvd0o-unsplash.jpg");
+    background-size: cover;
+    height: 20rem;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+/* About me section */
+
+#about {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#about h2 {
+    font-size: 3.5rem;
+    height: 10rem;
+    /* padding: 0.5rem 1rem 6rem 6rem; */
+    border-right: 5px solid black;
+    text-align: end;
+}
+
+#about img {
+    height: 25rem;
+}
+
+/* Work section */
+
+#work {
+    display: flex;
+    /* justify-content: center; */
+}
+
+#work h2 {
+    font-size: 3.5rem;
+    height: 10rem;
+    /* padding: 0.5rem 1rem 6rem 6rem; */
+    border-right: 5px solid black;
+    text-align: end;
+}
+
+/* Contact me section */
+
+#contact {
+    display: flex;
+    /* justify-content: center; */
+}
+
+#contact h2 {
+    font-size: 3.5rem;
+    height: 10rem;
+    /* padding: 0.5rem 1rem 6rem 6rem; */
+    border-right: 5px solid black;
+    text-align: end;
 }
