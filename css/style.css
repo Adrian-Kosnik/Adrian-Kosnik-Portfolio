@@ -27,7 +27,71 @@ nav button:hover {
     text-decoration: line-through;
 }
 
-.hero-image {
-    background-image: url("/images/windows-xp-bliss-4k-lu-1920x1080.jpeg");
+.hero-banner div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
+.hero-banner div h2 {
+    padding: 0 5rem 2.5rem 0;
+    font-size: 4rem;
+}
+
+.hero-image {
+    background-image: url("/images/gradienta-el5ZXkPvd0o-unsplash.jpg");
+    background-size: cover;
+    height: 20rem;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+/* About me section */
+
+#about {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#about h2 {
+    font-size: 3.5rem;
+    height: 10rem;
+    /* padding: 0.5rem 1rem 6rem 6rem; */
+    border-right: 5px solid black;
+    text-align: end;
+}
+
+#about img {
+    height: 25rem;
+}
+
+/* Work section */
+
+#work {
+    display: flex;
+    /* justify-content: center; */
+}
+
+#work h2 {
+    font-size: 3.5rem;
+    height: 10rem;
+    /* padding: 0.5rem 1rem 6rem 6rem; */
+    border-right: 5px solid black;
+    text-align: end;
+}
+
+/* Contact me section */
+
+#contact {
+    display: flex;
+    /* justify-content: center; */
+}
+
+#contact h2 {
+    font-size: 3.5rem;
+    height: 10rem;
+    /* padding: 0.5rem 1rem 6rem 6rem; */
+    border-right: 5px solid black;
+    text-align: end;
+}
