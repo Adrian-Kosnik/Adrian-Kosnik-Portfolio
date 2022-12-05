@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio</title>
@@ -13,17 +16,17 @@
   <header>
     <h1>Adrian Kosnik</h1>
     <nav>
-        <button>About Me</button>
-        <button>My Work</button>
-        <button>Contact Me</button>
-        <button>Résumé</button>
+        <a href="#about-grid">About Me</a>
+        <a href="#work-grid">My Work</a>
+        <a href="#contact-grid">Contact Me</a>
+        <a href="#">Résumé</a>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
       <div class="hero-image">
-        <h2>My Portfolio</h2>
+        <h2>Portfolio</h2>
       </div>
   </section>
 
@@ -57,10 +60,18 @@
       <div id="placeholder3" class="categoryGridArea">
         <div id="s.heading">Place holder</div>
       </div>
+    </section>
 
-
-
-
+    <section id="contact-grid">
+      <div id="contact-title" class="categoryGridArea">
+        <div class="heading">Contact Me</div>
+      </div>
+      <div id="contact-num" class="categoryGridArea">
+        <button class="button">+447714736363</button>
+        <button class="button">adriankosnik67@gmail.com</button>
+        <button class="button">GitHub</button>
+        <button class="button">Linkedin</button>
+      </div>
     </section>
 
     </section>

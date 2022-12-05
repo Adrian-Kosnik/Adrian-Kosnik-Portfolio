@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -11,20 +16,23 @@ header h1 {
     margin-left: 1rem;
     color: blue;
     font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
     margin-right: 1rem;
 }
 
-nav button {
+nav a {
     background: none;
     border: none;
     font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
+    text-decoration: none;
 }
 
-nav button:hover {
+nav a:hover {
     text-decoration: line-through;
 }
 
@@ -60,7 +68,7 @@ nav button:hover {
 #about-grid {
     margin: 0px 5%;
     display: grid;
-    grid-template-rows: 300px 300px 1px;
+    grid-template-rows: 300px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: " abt ab ab ";
 }
@@ -163,4 +171,32 @@ nav button:hover {
     cursor: pointer;
     display: grid flex;
     align-content: end;
+}
+
+/* contact me grid */
+
+#contact-grid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: " cnt inf inf ";
+}
+
+#contact-title {
+    grid-area: cnt;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+    border-right: 5px solid #000000;
+}
+
+#contact-num {
+    grid-area: inf;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+    border-right: 5px solid #000000;
 }
