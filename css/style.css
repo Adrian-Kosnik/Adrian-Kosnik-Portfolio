@@ -3,7 +3,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(113, 187, 252, 0.7);
+    background-color: rgba(113, 187, 252, 1);
     position: sticky;
     top: 0;
 }
@@ -41,7 +41,7 @@ nav button:hover {
 }
 
 .hero-image {
-    background-image: url("/images/gradienta-el5ZXkPvd0o-unsplash.jpg");
+    background-image: url("/images/gradient-banner.jpg");
     background-size: cover;
     height: 20rem;
     width: 100%;
@@ -54,6 +54,7 @@ nav button:hover {
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    margin: 1rem 10rem 0.5rem 10rem;
 }
 
 #about h2 {
@@ -62,6 +63,7 @@ nav button:hover {
     /* padding: 0.5rem 1rem 6rem 6rem; */
     border-right: 5px solid black;
     text-align: end;
+    margin-right: 1rem;
 }
 
 #about img {
@@ -72,6 +74,8 @@ nav button:hover {
 
 #work {
     display: flex;
+    margin: 1rem 10rem 0.5rem 10rem;
+    align-items: center;
     /* justify-content: center; */
 }
 
@@ -81,7 +85,18 @@ nav button:hover {
     /* padding: 0.5rem 1rem 6rem 6rem; */
     border-right: 5px solid black;
     text-align: end;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
+
+#horiseon {
+    background-image: url("/images/horiseon-challenge1.png");
+    height: 40rem;
+    width: 80rem;
+    /* margin-left: 1rem; */
+}
+
+
 
 /* Contact me section */
 
