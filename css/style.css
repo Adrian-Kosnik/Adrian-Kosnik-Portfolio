@@ -50,22 +50,17 @@ nav button:hover {
 
 /* grid stuff */
 
-.about-heading {
+.heading {
     color: black;
     font-size: 5rem;
 }
-  
-  .subHeading {
-    text-align: center;
-    border-bottom: 2px solid black;
-    width: 300px;
-    margin: 50px auto;
-}
+
+/* about grid */
 
 #about-grid {
     margin: 0px 5%;
     display: grid;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 300px 300px 1px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: " abt ab ab ";
 }
@@ -76,89 +71,96 @@ nav button:hover {
     cursor: pointer;
     display: grid;
     align-content: end;
-    border-right: 5px solid #FF6200;
-
+    border-right: 5px solid #000000;
 }
 
 #about-content {
     grid-area: ab;
-    /* background-image: url("../images/AK-portrait.jpeg"); */
-    /* background-position: center; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
     margin: 5px;
     cursor: pointer;
     display: grid flex;
     align-content: end;
 }
 
-#paragraph-wrapper {
-    display: flex;
-    align-content: flex-end;
+
+/* work grid */
+
+#work-grid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: " wkt wkh wkh "
+                         " wkt wkh wkh"
+                         " wkt wkp ph1"
+                         " wkt ph2 ph3";
 }
 
-.paragraph {
-    text-align: center;
+#work-title {
+    grid-area: wkt;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+    border-right: 5px solid #000000;
 }
 
-
-
-
-/* 
-About me section
-
-#about {
-    display: flex;
-    align-items: center;
-    margin: 1rem 10rem 0.5rem 10rem;
-}
-
-#about h2 {
-    font-size: 3.5rem;
-    height: 10rem;
-    border-right: 5px solid black;
-    text-align: end;
-    margin-right: 1rem;
-}
-
-#about img {
-    height: 25rem;
-}
-
-Work section
-
-#work {
-    display: flex;
-    margin: 1rem 10rem 0.5rem 10rem;
-    align-items: center;
-}
-
-#work h2 {
-    font-size: 3.5rem;
-    height: 10rem;
-    border-right: 5px solid black;
-    text-align: end;
-    margin-right: 1rem;
-    margin-left: 1rem;
-}
-
-#horiseon {
+#work-hori {
     background-image: url("/images/horiseon-challenge1.png");
-    height: 40rem;
-    width: 80rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: wkh;
+    margin: 5px;
+    cursor: pointer;
+    display: grid flex;
+    align-content: end;
 }
 
-
-
-Contact me section
-
-#contact {
-    display: flex;
+#work-prew {
+    background-image: url("/images/prework-study-guide.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: wkp;
+    margin: 5px;
+    cursor: pointer;
+    display: grid flex;
+    align-content: end;
 }
 
-#contact h2 {
-    font-size: 3.5rem;
-    height: 10rem;
-    border-right: 5px solid black;
-    text-align: end;
-} */
+#placeholder1 {
+    background-image: url("/images/placeholder-img-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: ph1;
+    margin: 5px;
+    cursor: pointer;
+    display: grid flex;
+    align-content: end;
+}
+
+#placeholder2 {
+    background-image: url("/images/placeholder-img-2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: ph2;
+    margin: 5px;
+    cursor: pointer;
+    display: grid flex;
+    align-content: end;
+}
+
+#placeholder3 {
+    background-image: url("/images/placeholder-img-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: ph3;
+    margin: 5px;
+    cursor: pointer;
+    display: grid flex;
+    align-content: end;
+}
