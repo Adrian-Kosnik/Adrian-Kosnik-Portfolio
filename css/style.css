@@ -21,6 +21,7 @@ header h1 {
     color: rgb(0, 0, 0);
     font-size: 4rem;
     font-family: 'Roboto', sans-serif;
+    cursor: default;
 }
 
 nav {
@@ -74,7 +75,25 @@ nav a:hover {
     font-size: 5rem;
 }
 
+.s-heading {
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 1.3rem 1.9rem;
+    margin-bottom: 10%;
+    /* width: 20rem; */
 
+}
+
+.small-s-heading {
+    font-size: 1rem;
+    width: 12rem;
+    height: 5rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 1.3rem 1.9rem;
+    margin-bottom: 10%;
+}
 
 /* about grid */
 
@@ -90,11 +109,11 @@ nav a:hover {
     grid-area: abt;
     width: 280px;
     margin: 5px;
-    cursor: pointer;
+    cursor: default;
     display: grid;
     justify-content: end;
     text-align: end;
-    border-right: 5px solid #000000;
+    border-right: 0.5rem solid #000000;
 }
 
 #about-title div {
@@ -129,15 +148,29 @@ nav a:hover {
     grid-area: wkt;
     width: 280px;
     margin: 5px;
-    cursor: pointer;
+    cursor: default;
     display: grid;
     justify-content: end;
     text-align: end;
-    border-right: 5px solid #000000;
+    border-right: 0.5rem solid #000000;
 }
 
 #work-title div {
     margin: 1rem 2rem;
+}
+
+.color {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: flex-end;
+}
+
+.color:hover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 #work-hori {
@@ -148,8 +181,9 @@ nav a:hover {
     grid-area: wkh;
     margin: 5px;
     cursor: pointer;
-    display: grid flex;
-    align-content: end;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
     border: 0.3rem solid black;
 }
 
@@ -161,8 +195,10 @@ nav a:hover {
     grid-area: wkp;
     margin: 5px;
     cursor: pointer;
-    display: grid flex;
-    align-content: end;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border: 0.3rem solid black;
 }
 
 #placeholder1 {
@@ -173,8 +209,10 @@ nav a:hover {
     grid-area: ph1;
     margin: 5px;
     cursor: pointer;
-    display: grid flex;
-    align-content: end;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border: 0.3rem solid black;
 }
 
 #placeholder2 {
@@ -185,8 +223,10 @@ nav a:hover {
     grid-area: ph2;
     margin: 5px;
     cursor: pointer;
-    display: grid flex;
-    align-content: end;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border: 0.3rem solid black;
 }
 
 #placeholder3 {
@@ -197,8 +237,10 @@ nav a:hover {
     grid-area: ph3;
     margin: 5px;
     cursor: pointer;
-    display: grid flex;
-    align-content: end;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border: 0.3rem solid black;
 }
 
 /* contact me grid */
@@ -216,11 +258,11 @@ nav a:hover {
     /* height: 280px; */
     width: 280px;
     margin: 5px;
-    cursor: pointer;
+    cursor: default;
     display: grid;
     justify-content: end;
     text-align: end;
-    border-right: 5px solid #000000;
+    border-right: 0.5rem solid #000000;
 }
 
 #contact-title div {
@@ -233,7 +275,19 @@ nav a:hover {
     cursor: pointer;
     display: grid;
     place-items: center;
-    align-items: start;
+    align-items: center;
+}
+
+#contact-num a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+#contact-num a:hover {
+    /* font-size: 1.6rem; */
+    text-decoration: underline;
 }
 
 #contact-email {
@@ -242,21 +296,59 @@ nav a:hover {
     cursor: pointer;
     display: grid;
     place-items: center;
-    align-items: start;
+    align-items: center;
 }
+
+#contact-email a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+#contact-email a:hover {
+    /* font-size: 1.6rem; */
+    text-decoration: underline;
+}
+
 #contact-hub {
     grid-area: igh;
     margin: 5px;
     cursor: pointer;
     display: grid;
     place-items: center;
-    align-items: start;
+    align-items: center;
 }
+
+#contact-hub a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+#contact-hub a:hover {
+    /* font-size: 1.6rem; */
+    text-decoration: underline;
+}
+
 #contact-linked {
     grid-area: iln;
     margin: 5px;
     cursor: pointer;
     display: grid;
     place-items: center;
-    align-items: start;
+    align-items: center;
+}
+
+#contact-linked a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+#contact-linked a:hover {
+    /* font-size: 1.6rem; */
+    text-decoration: underline;
 }
