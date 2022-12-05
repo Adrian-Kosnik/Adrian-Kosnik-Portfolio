@@ -1,4 +1,3 @@
-
 header {
     display: flex;
     align-items: center;
@@ -48,11 +47,68 @@ nav button:hover {
     background-repeat: no-repeat;
 }
 
-/* About me section */
+
+/* grid stuff */
+
+.about-heading {
+    color: black;
+    font-size: 5rem;
+}
+  
+  .subHeading {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin: 50px auto;
+}
+
+#about-grid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: " abt ab ab ";
+}
+
+#about-title {
+    grid-area: abt;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+    border-right: 5px solid #FF6200;
+
+}
+
+#about-content {
+    grid-area: ab;
+    /* background-image: url("../images/AK-portrait.jpeg"); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    margin: 5px;
+    cursor: pointer;
+    display: grid flex;
+    align-content: end;
+}
+
+#paragraph-wrapper {
+    display: flex;
+    align-content: flex-end;
+}
+
+.paragraph {
+    text-align: center;
+}
+
+
+
+
+/* 
+About me section
 
 #about {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     margin: 1rem 10rem 0.5rem 10rem;
 }
@@ -60,7 +116,6 @@ nav button:hover {
 #about h2 {
     font-size: 3.5rem;
     height: 10rem;
-    /* padding: 0.5rem 1rem 6rem 6rem; */
     border-right: 5px solid black;
     text-align: end;
     margin-right: 1rem;
@@ -70,19 +125,17 @@ nav button:hover {
     height: 25rem;
 }
 
-/* Work section */
+Work section
 
 #work {
     display: flex;
     margin: 1rem 10rem 0.5rem 10rem;
     align-items: center;
-    /* justify-content: center; */
 }
 
 #work h2 {
     font-size: 3.5rem;
     height: 10rem;
-    /* padding: 0.5rem 1rem 6rem 6rem; */
     border-right: 5px solid black;
     text-align: end;
     margin-right: 1rem;
@@ -93,22 +146,19 @@ nav button:hover {
     background-image: url("/images/horiseon-challenge1.png");
     height: 40rem;
     width: 80rem;
-    /* margin-left: 1rem; */
 }
 
 
 
-/* Contact me section */
+Contact me section
 
 #contact {
     display: flex;
-    /* justify-content: center; */
 }
 
 #contact h2 {
     font-size: 3.5rem;
     height: 10rem;
-    /* padding: 0.5rem 1rem 6rem 6rem; */
     border-right: 5px solid black;
     text-align: end;
-}
+} */
