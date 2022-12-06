@@ -95,10 +95,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* .s-headinga:hover, .s-heading:visited, .s-heading:link, .s-heading:active {
-    text-decoration: none;
-} */
-
 .small-s-heading {
     font-size: 1rem;
     width: 12rem;
@@ -115,7 +111,7 @@ nav a:hover {
 #about-grid {
     margin: 20px 10% 10px 10%;
     display: grid;
-    grid-template-rows: 300px;
+    grid-template-rows: auto;
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-areas: " abt ab ab ";
 }
@@ -142,9 +138,13 @@ nav a:hover {
     display: grid;
     text-align: left;
     align-items: center;
-
 }
 
+#about-content p {
+    max-height: 100%;
+    overflow: hidden;
+    
+}
 
 /* work grid */
 
@@ -260,12 +260,27 @@ nav a:hover {
 
 /* contact me grid */
 
+
+
 #contact-grid {
     margin: 20px 10% 10px 10%;
     display: grid;
-    grid-template-rows: 300px;
+    grid-template-rows: auto;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
     grid-template-areas: " cnt inu iem igh iln ";
+}
+
+@media screen and (max-width: 1024px) {
+    #contact-grid {
+        margin: 20px 10% 10px 10%;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0.5fr ;
+        grid-template-areas: " cnt inu "
+                             " cnt iem "
+                             " cnt igh "
+                             " cnt iln ";
+    }
 }
 
 #contact-title {
