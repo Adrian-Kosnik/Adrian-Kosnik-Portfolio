@@ -1,3 +1,10 @@
+:root {
+    --main: #453C67;
+    --secondary: #6D67E4;
+    --accent: #46C2CB;
+    --button: #6D67E44D;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -11,14 +18,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(0, 94, 176);
+    background-color: var(--main);
     position: sticky;
     top: 0;
 }
 
 header h1 {
     margin-left: 1rem;
-    color: rgb(0, 0, 0);
+    color: var(--accent);
     font-size: 4rem;
     font-family: 'Roboto', sans-serif;
     cursor: default;
@@ -39,12 +46,12 @@ nav a {
     cursor: pointer;
     text-decoration: none;
     padding-right: 1.5rem;
-    color: rgb(0, 0, 0);
+    color: var(--accent);
 }
 
 nav a:hover {
     text-decoration: underline;
-    color: whitesmoke;
+    color: var(--secondary);
 }
 
 .hero-banner div {
@@ -54,13 +61,17 @@ nav a:hover {
 }
 
 .hero-banner div h2 {
-    padding: 0 5rem 2.5rem 0;
+    margin: 0 5rem 2.5rem 0;
+    padding: 1rem;
     font-size: 4rem;
     font-family: 'Roboto', sans-serif;
+    color: var(--accent);
+    background-color: #6D67E499;
+    border-radius: 3rem;
 }
 
 .hero-image {
-    background-image: url("/images/banner-img.jpg");
+    background-image: url("/images/banner-img2.jpg");
     background-size: cover;
     height: 20rem;
     width: 100%;
@@ -71,34 +82,38 @@ nav a:hover {
 /* grid stuff */
 
 .heading {
-    color: black;
+    color: var(--main);
     font-size: 5rem;
 }
 
 .s-heading {
     font-size: 3rem;
-    color: white;
-    background-color: rgb(0, 0, 0);
+    color: var(--main);
+    background-color: var(--accent);
     padding: 1.3rem 1.9rem;
     margin-bottom: 10%;
-    /* width: 20rem; */
-
+    text-decoration: underline;
 }
+
+/* .s-headinga:hover, .s-heading:visited, .s-heading:link, .s-heading:active {
+    text-decoration: none;
+} */
 
 .small-s-heading {
     font-size: 1rem;
     width: 12rem;
     height: 5rem;
-    color: white;
-    background-color: rgb(0, 0, 0);
+    color: var(--main);
+    background-color: var(--accent);
     padding: 1.3rem 1.9rem;
     margin-bottom: 10%;
+    text-decoration: underline;
 }
 
 /* about grid */
 
 #about-grid {
-    margin: 0px 10%;
+    margin: 20px 10% 10px 10%;
     display: grid;
     grid-template-rows: 300px;
     grid-template-columns: 0.5fr 1fr 1fr;
@@ -108,12 +123,12 @@ nav a:hover {
 #about-title {
     grid-area: abt;
     width: 280px;
-    margin: 5px;
+    margin-right: 1rem;
     cursor: default;
     display: grid;
     justify-content: end;
     text-align: end;
-    border-right: 0.5rem solid #000000;
+    border-right: 0.5rem solid var(--main);
 }
 
 #about-title div {
@@ -122,7 +137,7 @@ nav a:hover {
 
 #about-content {
     grid-area: ab;
-    margin: 5px;
+    margin-left: 1rem;
     cursor: pointer;
     display: grid;
     text-align: left;
@@ -134,7 +149,7 @@ nav a:hover {
 /* work grid */
 
 #work-grid {
-    margin: 0px 10%;
+    margin: 20px 10% 10px 10%;
     display: grid;
     grid-template-rows: 300px 300px 300px 300px;
     grid-template-columns: 0.5fr 1fr 1fr;
@@ -147,12 +162,12 @@ nav a:hover {
 #work-title {
     grid-area: wkt;
     width: 280px;
-    margin: 5px;
+    margin-right: 0.5rem;
     cursor: default;
     display: grid;
     justify-content: end;
     text-align: end;
-    border-right: 0.5rem solid #000000;
+    border-right: 0.5rem solid var(--main);
 }
 
 #work-title div {
@@ -179,12 +194,12 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: wkh;
-    margin: 5px;
+    margin: 0 0 1rem 1rem;
     cursor: pointer;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    border: 0.3rem solid black;
+    border: 0.3rem solid var(--accent);
 }
 
 #work-prew {
@@ -193,12 +208,12 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: wkp;
-    margin: 5px;
+    margin: 0.5rem 0.5rem 1rem 1rem;
     cursor: pointer;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    border: 0.3rem solid black;
+    border: 0.3rem solid var(--accent);
 }
 
 #placeholder1 {
@@ -207,12 +222,12 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: ph1;
-    margin: 5px;
+    margin: 0.5rem 0 1rem 1rem;
     cursor: pointer;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    border: 0.3rem solid black;
+    border: 0.3rem solid var(--accent);
 }
 
 #placeholder2 {
@@ -221,12 +236,12 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: ph2;
-    margin: 5px;
+    margin: 0.5rem 0.5rem 0 1rem;
     cursor: pointer;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    border: 0.3rem solid black;
+    border: 0.3rem solid var(--accent);
 }
 
 #placeholder3 {
@@ -235,18 +250,18 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: ph3;
-    margin: 5px;
+    margin: 0.5rem 0 0 1rem;
     cursor: pointer;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    border: 0.3rem solid black;
+    border: 0.3rem solid var(--accent);
 }
 
 /* contact me grid */
 
 #contact-grid {
-    margin: 0px 10%;
+    margin: 20px 10% 10px 10%;
     display: grid;
     grid-template-rows: 300px;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
@@ -257,12 +272,12 @@ nav a:hover {
     grid-area: cnt;
     /* height: 280px; */
     width: 280px;
-    margin: 5px;
+    margin-right: 1rem;
     cursor: default;
     display: grid;
     justify-content: end;
     text-align: end;
-    border-right: 0.5rem solid #000000;
+    border-right: 0.5rem solid var(--main);
 }
 
 #contact-title div {
@@ -282,12 +297,16 @@ nav a:hover {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     text-decoration: none;
-    color: #000000;
+    color: var(--main);
+    background-color: var(--accent);
+    padding: 2rem;
+    border-radius: 4rem;
+    width: 14rem;
+    text-align: center;
 }
 
 #contact-num a:hover {
-    /* font-size: 1.6rem; */
-    text-decoration: underline;
+    border: 3px solid var(--main);
 }
 
 #contact-email {
@@ -303,12 +322,16 @@ nav a:hover {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     text-decoration: none;
-    color: #000000;
+    color: var(--main);
+    background-color: var(--accent);
+    padding: 2rem;
+    border-radius: 4rem;
+    width: 14rem;
+    text-align: center;
 }
 
 #contact-email a:hover {
-    /* font-size: 1.6rem; */
-    text-decoration: underline;
+    border: 3px solid var(--main);
 }
 
 #contact-hub {
@@ -324,12 +347,16 @@ nav a:hover {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     text-decoration: none;
-    color: #000000;
+    color: var(--main);
+    background-color: var(--accent);
+    padding: 2rem;
+    border-radius: 4rem;
+    width: 14rem;
+    text-align: center;
 }
 
 #contact-hub a:hover {
-    /* font-size: 1.6rem; */
-    text-decoration: underline;
+    border: 3px solid var(--main);
 }
 
 #contact-linked {
@@ -345,10 +372,14 @@ nav a:hover {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     text-decoration: none;
-    color: #000000;
+    color: var(--main);
+    background-color: var(--accent);
+    padding: 2rem;
+    border-radius: 4rem;
+    width: 14rem;
+    text-align: center;
 }
 
 #contact-linked a:hover {
-    /* font-size: 1.6rem; */
-    text-decoration: underline;
+    border: 3px solid var(--main);
 }
