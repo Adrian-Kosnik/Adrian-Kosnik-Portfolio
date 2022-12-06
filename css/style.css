@@ -71,7 +71,7 @@ nav a:hover {
 }
 
 .hero-image {
-    background-image: url("/images/banner-img2.jpg");
+    background-image: url("../images/banner-img2.jpg");
     background-size: cover;
     height: 20rem;
     width: 100%;
@@ -189,7 +189,7 @@ nav a:hover {
 }
 
 #work-hori {
-    background-image: url("/images/horiseon-challenge1.png");
+    background-image: url("../images/horiseon-challenge1.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -203,7 +203,7 @@ nav a:hover {
 }
 
 #work-prew {
-    background-image: url("/images/prework-study-guide.png");
+    background-image: url("../images/prework-study-guide.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -217,7 +217,7 @@ nav a:hover {
 }
 
 #placeholder1 {
-    background-image: url("/images/placeholder-img-1.jpg");
+    background-image: url("../images/placeholder-img-1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -231,7 +231,7 @@ nav a:hover {
 }
 
 #placeholder2 {
-    background-image: url("/images/placeholder-img-2.jpg");
+    background-image: url("../images/placeholder-img-2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -245,7 +245,7 @@ nav a:hover {
 }
 
 #placeholder3 {
-    background-image: url("/images/placeholder-img-3.jpg");
+    background-image: url("../images/placeholder-img-3.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
